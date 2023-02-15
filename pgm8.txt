@@ -1,0 +1,17 @@
+PROGRAM NUMBER : 08 
+AIM: ACCEPT AN INTEGER n AND COMPUTE
+n+nn+nnn+…
+ALGORITHM
+Step 1:start
+Step 2:enter the value of n
+Step 3:initialize total=0
+Step 4:for i=0 to n
+Step 5: total += int(str(num) + i * str(num))
+Step 6:print total
+Step 7:stop
+PROGRAM
+num = int(input('Enter in a value: '))
+total = 0
+for i in range(0, num):
+total += int(str(num) + i * str(num))
+print(total)

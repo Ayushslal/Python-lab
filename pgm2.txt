@@ -1,0 +1,60 @@
+PROGRAM NUMBER : 02 
+AIM:LIST COMPREHENSIONS:
+(a)GENERATE POSITIVE LIST OF NUMBERS FROM A GIVEN LIST OF INTEGERS
+ALGORITHM
+Step 1:start
+Step 2:create a list numlist=[34, 1, 0, -23, 82, -5]
+Step 3:if positivenum=num>0 then
+Step 4:print positivenum
+Step 5:stop
+PROGRAM
+numList = [34, 1, 0, -23, 82, -5]
+print('original numbers in the list',numList)
+positiveNum = list(filter(lambda X: X > 0, numList))
+print('positive numbers in the given list',positiveNum)
+(b)SQUARE OF N NUMBERS
+ALGORITHM
+Step 1:start
+Step 2:create a list numbers=[1,2,3,4,5]
+Step 3: squared_numbers=[number ** 2 for number in numbers]
+Step 4:print squared_numbers
+Step 5:stop
+PROGRAM
+numbers=[1,2,3,4,5]
+print("list is",numbers)
+squared_numbers=[number ** 2 for number in numbers]
+print("square is ",squared_numbers)
+(c)FORM A LIST OF VOWELS SLECTED FROM A GIVEN WORD
+ALGORITHM
+Step 1:start
+Step 2:enter a string
+Step 3:vowel== "aeiou"
+Step 4:create a dictionary data
+Step 5:for each character in string
+Step 6:if character in vowel then
+Step 7: data[charecter] += 1
+Step 8:print the vowel
+Step 9:stop
+PROGRAM
+input_string = input('enter a string')
+input_string = input_string.casefold()
+vowels = "aeiou"
+data = {}.fromkeys(vowels, 0)
+for charecter in input_string:
+if charecter in vowels:
+data[charecter] += 1
+for vowel in data:
+print(vowel, "=>", data[vowel])
+(d)LIST ORDINAL VALUE OF EACH ELEMENT OF A WORD
+ALGORITHM
+Step 1:start 
+Step 2:enter the word 
+Step 3: for each character in the word 
+Step 4:ord(character) 
+Step 5:print ordinal value of the word 
+Step 6:stop 
+PROGRAM
+word = input('enter a word') 
+print('ordinal values of the word : ',word) 
+for character in word:
+print(character, "=>",ord(character))

@@ -1,0 +1,22 @@
+PROGRAM NUMBER : 09  
+AIM: SORT DICTIONARY IN ASCENDING AND DESECNDING ORDER
+ALGORITHM
+Step 1:start
+Step 2:create a dictionary y={'carl':40,'alan':2,'bob':1,'danny':3}
+Step 3: l=list(y.items())
+Step 4: dict=dict(l)
+Step 5:l.sort()
+Step 6:print dictionary in ascendind order
+Step 8: l.sort(reverse=True)
+Step 9:print dictionary in descendind order
+Step 10:stop
+PROGRAM
+y={'carl':40,'alan':2,'bob':1,'danny':3}
+l=list(y.items())
+dict=dict(l)
+print("Dictionary",dict)
+l.sort()
+print('Ascending order is',l)
+l=list(y.items())
+l.sort(reverse=True)
+print('Descending order is',l)

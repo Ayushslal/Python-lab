@@ -1,0 +1,20 @@
+PROGRAM NUMBER : 11  
+AIM: FROM A LIST OF INTEGERS, CREATE A LIST REMOVING EVEN NUMBERS
+ALGORITHM
+Step 1:start
+Step 2:create list1 = [11, 22, 33, 44, 55]
+Step 3:print the list
+Step 4:for I in the list1
+Step 5:if(i%2 == 0) then
+Step 6:remove i
+Step 7:print the list after removing even numbers
+Step 8:stop
+PROGRAM
+list1 = [11, 22, 33, 44, 55]
+print("Original list:")
+print(list1)
+for i in list1:
+if(i%2 == 0):
+list1.remove(i)
+print("list after removing EVEN numbers:")
+print(list1)

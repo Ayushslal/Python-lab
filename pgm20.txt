@@ -1,0 +1,52 @@
+PROGRAM NUMBER : 20 Date:18/01/2022
+AIM:CREATE A CLASS PUBLISHER(name).DERIVE CLASS BOOK FROM 
+PUBLISHER WITH ATTRIBUTE TITLE AND AUTHOR.DERIVE CLASS PYTHON 
+FROM BOOK WITH ATTRIBUTE PRICE AND NO_OF_PAGES.WRITE A PROGRAM 
+THAT DISPLAY INFORMATION ABOUT A PYTHON BOOK.USE BASE CLASS 
+CONSTUCTOR INVOCATION AND METHOD OVERRIDING
+ALGORITHM
+Step 1:start
+Step 2:create a class publisher
+Step 3:assign publisher_name to name
+Step 4:define method display
+Step 5:print the name
+Step 6:create derived class book from publisher
+Step 7:initialize title and auther
+Step 8:define method display
+Step 9:access the parent constructor and method by using super()
+Step 10:print the title and auther
+Step 11:create derived class python from book
+Step 12: initialize price and pages
+Step 13: define method display
+Step 14:access the parent constructor and method by using super()
+Step 15:print the title and auther
+Step 16:create object obj2 for python
+Step 17:call the function display()
+Step 18:stop
+PROGRAM
+class publisher:
+ def __init__(self):
+ self.name="Prentice Hall"
+ def display(self):
+ print("publisher:",self.name)
+class book(publisher):
+ def __init__(self):
+ self.title="Core Python Application Programming"
+ self.author="Wesley J Chun"
+ def display(self):
+ super().__init__()
+ super().display()
+ print("Title:",self.title)
+ print("Auther:",self.author)
+class python(book):
+ def __init__(self):
+ self.price="650"
+ self.pages="1136"
+ def display(self):
+ super().__init__()
+ super().display()
+ print("Price:",self.price)
+ print("No.of pages:",self.pages)
+obj2=python()
+print("Book Details are:\n")
+obj2.display()

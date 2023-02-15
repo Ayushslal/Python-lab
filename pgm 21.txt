@@ -1,0 +1,13 @@
+PROGRAM NUMBER : 21
+AIM:WRITE A PYTHON PROGRAM TO READ A FILE LINE BY LINE AND STORE IT INTO A LIST
+ALGORITHM
+Step 1:start
+Step 2:open the file text.txt
+Step 3:read the file line by line
+Step 4:print the content
+Step 5:stop
+PROGRAM
+with open("text.txt") as f:
+content=f.readlines()
+li=[x.strip() for x in content]
+print(li)

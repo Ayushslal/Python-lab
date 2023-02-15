@@ -1,0 +1,12 @@
+PROGRAM NUMBER : 05 Date:16/11/2021
+AIM:GET A STRING FROM AN INPUT STRING WHERE ALL OCCURENCES OF 
+FIRST CHARACTER REPLACED WITH ‘$’, EXCEPT FIRST CHARACTER.
+ALGORITHM
+Step 1:start
+Step 2:enter the string
+Step 3: string[0]+string[1:].replace(string[0],'$')
+Step 4:print the string
+Step 5:stop
+PROGRAM
+string=input('Enter a String:')
+print(string[0]+string[1:].replace(string[0],'$'))

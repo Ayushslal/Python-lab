@@ -1,0 +1,35 @@
+PROGRAM NUMBER : 22 
+AIM:PYTHON PROGRAM TO COPY ODD LINES OF ONE FILE TO ANOTHER
+ALGORITHM
+Step 1:start
+Step 2:open file abc
+Step 3:open file file
+Step 4:read the content line by line of the file file1 and assign it to content
+Step 5:access each element from 0 to length of content
+Step 6:if(i%2==0) then
+Step 7:write the content in file2
+Step 8:else
+Step 9:pass
+Step 10:close file2
+Step 11:open file2 in read mode
+Step 12: assign file2 to content1
+Step 13:print the content1 of the file2
+Step 14:close the file1 and file2
+Step 15:stop
+66
+PROGRAM
+file1=open('abc.txt','r')
+file2=open('file.txt','w')
+content=file1.readlines()
+type(content)
+for i in range (0,len(content)):
+if(i%2==0):
+file2.write(content[i])
+else:
+pass
+file2.close()
+file2.open('file.txt','r')
+content1=file2.read()
+print(content1)
+file1.close()
+file2.close()

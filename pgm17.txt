@@ -1,0 +1,38 @@
+PROGRAM NUMBER : 17 
+AIM:CREATE RECTANGLE CLASS WITH ATTRIBUTES LENGTH AND BREADTH 
+AND METHODS TO FIND AREA AND PERIMETER.COMPUTE TWO RECTANGLE 
+OBJECTS BY THEIR AREA.
+ALGORITHM
+Step 1:start
+Step 2:create a class rectangle 
+Step 3:read length and breadth inside the constructor init
+Step 4:define method area 
+Step 5:return (length*breadth)
+Step 6:define method perimeter 
+Step 7: return(2*(length+bredth))
+Step 8:create two object r1 and r2
+Step 9:if area1=area2 then
+Step 10:prints same
+Step 11:else
+Step 12:print different
+Step 13:stop
+PROGRAM
+class rectangle():
+ def __init__(self):
+ self.length=int(input("Enter the length:"))
+ self.breadth=int(input("enter your breadth:"))
+ def area(self):
+ return(self.length*self.breadth)
+ def perimeter(self):
+ return(2*(self.length+self.breadth))
+r1=rectangle()
+r2=rectangle()
+print("Area of Rectangle=",r1.area())
+print("Perimeter of Rectangle=",r1.perimeter())
+print("Area of Rectangle=",r2.area())
+print("Perimeter of Rectangle=",r2.perimeter())
+if r1.area()==r2.area():
+ print("areas are same")
+else:
+ print("Different")
+)

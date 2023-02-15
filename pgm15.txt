@@ -1,0 +1,15 @@
+PROGRAM NUMBER : 15  
+AIM: GENERATE ALL FACTORES OF A NUMBER
+ALGORITHM
+Step 1:start
+Step 2:read a number
+Step 3:for I from 1 to num-1
+Step 4: if(num%i==0) then
+Step 5:print i
+Step 6:stop
+PROGRAM
+num=int(input("enter the number"))
+print("The factores of",num,"are")
+for i in range (1,num-1):
+if(num%i==0):
+print(i)

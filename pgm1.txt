@@ -1,0 +1,18 @@
+AIM:DISPLAY FUTURE LEAP YEAR FROM CURRENT YEAR TO A FINAL YEAR 
+ENTERED BY USER
+ALGORITHM
+step 1:start
+step 2:read the value of endyear
+step 3:assign startyear=2020
+step 4:for each year from startyear to end year
+step 5:if(0 == year % 4) and (0 != year % 100) or (0 == year % 400) then
+step 6:print year
+step 7:stop
+PROGRAM
+startYear = 2020
+print ("Enter last year")
+endYear = int(input())
+print ("List of leap years:")
+for year in range(startYear, endYear):
+if (0 == year % 4) and (0 != year % 100) or (0 == year % 400):
+print (year)

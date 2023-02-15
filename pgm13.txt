@@ -1,0 +1,23 @@
+PROGRAM NUMBER : 13  
+AIM: COUNT THE NUMBERS OF CHARACTERS (CHARACTER FREQUENCY) IN A 
+STRING
+ALGORITHM
+Step 1:start
+Step 2:enter the string
+Step 3:create a dictionary all_freq
+Step 4:for i in string
+Step 5:if i in all_freq then
+Step 6:all_freq[i] += 1
+Step 7:else
+Step 8:all_freq[i]= 1
+Step 9:print the count of character I the string
+Step 10:stop
+PROGRAM
+test_str = input("enter a string :-")
+all_freq = {}
+for i in test_str:
+if i in all_freq:
+all_freq[i] += 1
+else:
+all_freq[i] = 1
+print ("Count of all characters in "+test_str+" is :\n "+ str(all_freq))

@@ -1,0 +1,19 @@
+PROGRAM NUMBER : 10 
+AIM:CREATE A SINGLE STRING SEPARATED WITH SPACE FROM TWO STRING 
+BY SWAPPING THE CHARACTER AT POSITION 1.
+ALGORITHM
+Step 1:start
+Step 2:input two stringa and b
+Step 3: x=a[0:2]
+Step 4: a=a.replace(a[0:2],b[0:2])
+Step 5: b=b.replace(b[0:2],x)
+Step 6:print the strings a and b
+Step 7:stop
+PROGRAM
+a=input('enter the first string')
+b=input('enter the second string')
+x=a[0:2]
+a=a.replace(a[0:2],b[0:2])
+b=b.replace(b[0:2],x)
+print("After swapping")
+print(a,b)

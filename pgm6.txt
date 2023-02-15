@@ -1,0 +1,15 @@
+PROGRAM NUMBER : 06 Date:18/11/2021
+AIM: CREATE A STRING FROM GIVEN STRING WHERE ALL FIRST AND LAST 
+CHARACTER EXCHANGED.
+ALGORITHM
+Step 1:start
+Step 2:enter the string
+Step 3: swapped_string = string[-1] + string[1:-1] + string[0]
+Step 4:print theswapped_string
+Step 5:stop
+PROGRAM
+string=input("Enter a string")
+start = string[0]
+end = string[-1]
+swapped_string = end + string[1:-1] + start
+print(swapped_string)

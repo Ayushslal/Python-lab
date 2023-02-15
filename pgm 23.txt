@@ -1,0 +1,15 @@
+PROGRAM NUMBER : 23
+AIM:WRITE A PYTHON PROGRAM TO READ EACH ROW FROM A GIVEN CSV FILE AND PRINT A LIST OF STRING
+ALGORITHM
+Step 1:start
+Step 2:import csv
+Step 3:open the csv file
+Step 4:read the file and assign it to data
+Step 5:print the file
+Step 6:stop
+PROGRAM
+import csv
+with open ('csvfile.csv',newline='')as csvfile:
+data=csv.reader(csvfile,delimiter=' ',quotechar='|')
+for row in data:
+print(','.join(row))

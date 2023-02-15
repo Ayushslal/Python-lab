@@ -1,0 +1,18 @@
+PROGRAM NUMBER 25
+AIM:WRITE A PYTHON PROGRAM TO WRITE A PYTHON DICTIONARY TO A CSV FILE. AFTER WRITING THE CSV FILE READ THE CSV FILE AND DISPLAY THE CONTENT
+ALGORITHM
+Step 1:start
+Step 2:import csv
+Step 3: open abcd.txt in write mode
+Step 4:provide the field names
+Step 5:write the file dictionary by using method DictWriter and assign to content
+Step 6:using writerow() written to csv
+Step 7:stop
+PROGRAM
+import csv
+with open('abcd.txt', mode='w') as outf:
+fieldnames = ['Name', 'Department', 'Birthday Month']
+content = csv.DictWriter(outf, fieldnames=fieldnames)
+content.writeheader()
+content.writerow({'Name': 'John', 'Department': 'Accounting', 'Birthday Month': 'November'})
+content.writerow({'Name': 'Amy', 'Department': 'IT', 'Birthday Month': 'March'})

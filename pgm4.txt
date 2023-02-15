@@ -1,0 +1,21 @@
+PROGRAM NUMBER : 04 
+AIM:STORE A LIST OF FIRST NAMES.COUNT THE OCCURRENCES OF ‘a’ WITHIN 
+THE LIST
+ALGORITHM
+Step 1:start
+Step 2:create a list s = ['anu', 'ammu', 'manu', 'binu', 'janu', 'meenu',
+‘mani’]
+Step 4:for a in the list
+Step 5:new+=a
+Step 6:print the count
+Step 7:stop
+PROGRAM
+def convert(s):
+new = ""
+for x in s:
+new += x
+return new
+s = ['anu', 'ammu', 'manu', 'binu', 'janu', 'meenu', 'mani']
+string = list(convert(s))
+print("count of 'a' in the list is")
+print(string.count('a'))

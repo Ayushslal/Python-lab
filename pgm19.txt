@@ -1,0 +1,34 @@
+PROGRAM NUMBER:19
+AIM:CREATE A CLASS RECTANGLE WITH PRIVATE ATTRIBUTES LENGTH AND 
+WIDTH. OVERLOAD ‘<’ OPERATOR TO COMPARE THE AREA OF 2 RECTANGLE.
+ALGORITHM
+Step 1:start
+Step 2:create a class rectangle
+Step 3:initialize length and width as private
+Step 4:define constuctor init
+Step 5:read length,width
+Step 6:define method area 
+Step 7:return (length*breadth)
+Step 8:create two object r1 and r2
+Step 9:if area1<area2 then
+Step 10:prints area2 is greater
+Step 11:else
+Step 12:print area1 is greater
+Step 13:stop
+PROGRAM
+class rectangle():
+ __length=None
+ __width=None
+ def __init__(self):
+ self.__length=int(input("Enter the length:"))
+ self.__width=int(input("enter your width:"))
+ def area(self):
+ return(self.__length*self.__width)
+r1=rectangle()
+r2=rectangle()
+print("Area of Rectangle=",r1.area())
+print("Area of Rectangle=",r2.area())
+if r1.area()<r2.area():
+ print("area2 is greater")
+else:
+ print("area1 is greater")

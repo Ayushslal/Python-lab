@@ -1,0 +1,13 @@
+PROGRAM NUMBER : 07 Date:23/11/2021
+AIM:CREATE A LIST OF COLOURS FROM COMMA-SEPARATED COLOUR NAMES 
+ENTERED BY USER.DISPLAY FIRST AND LAST COLOUR
+ALGORITHM
+Step 1:start
+Step 2:enter the colours
+Step 3:seperate each colours using split()
+Step 4:print first and last colour
+Step 5:stop
+PROGRAM
+color=(input("Enter the colours:"))
+n=color.split(",")
+print("%s %s"%(n[0],n[-1]))

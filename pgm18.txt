@@ -1,0 +1,47 @@
+PROGRAM NUMBER : 18 
+AIM: CREATE A BANK ACCOUNT WITH ACCOUNT NUMBER ,NAME,TYPE OF 
+ACCOUNT AND BALANCE WRITE CONSTRUCTOR AND METHODS TO DEPOSIT 
+AT THE BANK AND WITHDRAW AN AMOUNT FROM THE BANK 
+ALGORITHM
+Step 1:start 
+Step 2:create a class bank 
+Step 3:read accno,acctype,holdname,balance inside the init 
+Step 4: define method deposit 
+Step 5:read deposit 
+Step 6:balance=balance+deposit 
+Step 7:print balance 
+Step 8:define method withdraw 
+Step 9:read amount to withdraw 
+Step 10:if balance>=amount then 
+Step 11:balance=balance-amount 
+Step 12:print amount 
+Step 13:else 
+Step 14:print insufficient balance 
+Step 15:define method display 
+Step 16:print balance 
+Step 17:create object and call the methods 
+Step 18:stop
+PROGRAM
+class bank:
+ def __init__(self):
+ self.accno=int(input("enter your accno:"))
+ self.acctype=(input("enter your acctype:"))
+ self.holdname=(input("enter your name:"))
+ self.balance=int(input("enter your balance:"))
+ def deposit(self):
+ amount=int(input("enter the amount to deposit:"))
+ self.balance+=amount
+ print("The account balance is:",self.balance)
+ def withdraw(self):
+ amount=int(input("Enter the amount to withdraw:"))
+ if self.balance>=amount:
+self.balance-=amount
+print("YOU WITHDRAW RS:",amount)
+ else:
+print("INSUFFICIENT BALANCE TO WITHDRAW")
+ def display(self):
+ print("Net Available Balance is:",self.balance)
+a=bank()
+a.deposit()
+a.withdraw()
+a.display()
